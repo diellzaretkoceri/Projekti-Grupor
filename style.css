@@ -1,0 +1,149 @@
+@charset "utf-8";
+body {
+    font-family: "Lato", sans-serif;
+  }
+  
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+  .footer{
+      background-color: #34393C;
+      color: #C7C9CB;
+      padding: 3px;
+      margin-top: 60px;
+  }
+  a:link {
+    color: #999;
+  }
+  
+  
+  a:visited {
+    color : #999;
+  }
+  
+  a:hover {
+    color: white;
+  }
+  
+  a:active {
+    color: #999;
+  }
+  .main {
+    margin-left: 40%;
+    margin-top: 15%;
+  }
+  .rating-star {
+      direction: rtl;
+      font-size: 40px;
+      unicode-bidi: bidi-override;
+      display: inline-block;
+  }
+  .rating-star input {
+      opacity: 0;
+      position: relative;
+      left: -30px;
+      z-index: 2;
+      cursor: pointer;
+  }
+  .rating-star span.star:before {
+      color: #777777;
+  }
+  .rating-star span.star {
+      display: inline-block;
+      font-family: FontAwesome;
+      font-style: normal;
+      font-weight: normal;
+      position: relative;
+      z-index: 1;
+  }
+  .rating-star span {
+      margin-left: -30px;
+  }
+  .rating-star span.star:before {
+      color: #777777;
+      content:"\f006";
+  }
+  .rating-star input:hover + span.star:before, .rating-star input:hover + span.star ~ span.star:before, .rating-star input:checked + span.star:before, .rating-star input:checked + span.star ~ span.star:before {
+      color: #ffd100;
+      content:"\f005";
+  }
+   
+  .selected-rating{
+      color: #ffd100;
+      font-weight: bold;
+      font-size: 42px;
+  }
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+ 
+ 
